@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Discussion App</title>
+  <link rel="stylesheet" href="adminc.css" />
+</head>
+<body class="body">
+
+  <!-- ✅ NAVIGATION -->
+  <nav class="nav">
+    <h1 id="title">Learning management system</h1>
+
+    <div class="buttons">
+
+        <input type="input" id="searchArea" placeholder="find user post">
+      <button id="button" class="find" onclick="FindOut()">find</button>
+      <button id="allPost" id="button" onclick="allPost()" >revert</button>
+      <button id="button" onclick="logOut()">Logout</button>
+      <span id="setting">Admin Only</span>
+    </div>
+  </nav>
+
+  <!-- ✅ ENTRY SECTION -->
+  <section class="entrySection">
+    <textarea id="userPost" placeholder="Enter your question here..."></textarea>
+    <button id="submitPost" onclick="Posthread()">Post</button>
+    <button id="repostBtn" onclick="repost()" style="display:none ;">EditPost</button>
+  </section>
+
+  <!-- ✅ THREADS DISPLAY -->
+  <div id="postthreads">
+    <!-- Example of one thread: This gets added dynamically -->
+    <!--
+    <div class="post-box">
+      <p class="question"><strong>Q.</strong> What is JavaScript?</p>
+      <div class="post-actions">
+        <button id="upBtn">👍</button>
+        <button id="downBtn">👎</button>
+        <button id="editBtn">Edit</button>
+        <button id="deleteBtn">Delete</button>
+      </div>
+      <p class="createdBy">Created by: username@example.com</p>
+    </div>
+    -->
+  </div>
+
+  <script src="adminc.js"></script>
+</body>
+</html>
+

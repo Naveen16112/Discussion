@@ -1,0 +1,132 @@
+.body{
+  background-color: #AC99EA ;
+}
+.entrySection{
+  display: flex;
+
+  margin-left: 30px;
+  margin-top:10px;
+}
+#inputUser{
+  margin-left:10px;
+   height: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  /* Light subtle shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#submitPost{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#repostBtn{
+  display: none;
+}
+.nav{
+ display:flex;
+ flex-direction:row;
+ height: 10px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  /* Light subtle shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#line{
+  width:1000px;
+  padding: 1px;
+  background-color: rgb(114, 6, 6);
+  border-radius: 8px;
+  /* Light subtle shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+.threads1{
+  display:flex;
+  height: 10px;
+  padding: 100px;
+
+  background-color: white;
+  border-radius: 8px;
+  /* Light subtle shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin-top:10px;
+ 
+}
+.threads0{
+ 
+
+  background-color: #AC99EA ;
+  border-radius: 8px;
+  /* Light subtle shadow */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+.threads {
+ align-items: center;
+  margin-top: -150px;
+  margin-left: -100px;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;        /* hides overflowing text */
+  text-overflow: ellipsis; /* adds ... at the end if text overflows */
+  white-space: nowrap;     /* keeps text in one line */
+}
+.threads0 strd{
+  margin-left: -250px;
+  margin-top: -40px;
+}
+
+#deleteBtn, #editBtn{
+  margin-left: 50px;
+}
+#deleteBtn, #editBtn,#submitPost{
+  
+  height:20px;
+ border:none;
+ border-radius:3px;
+ 
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ text-align:center;
+  transition: background-color 0.3s ease;
+      
+}
+#submitPost:hover,#deleteBtn:hover, #editBtn:hover{
+    background-color: #F52936; /* darker green on hover */
+}
+
+#title{
+      width: 100x;
+    height: 100x;
+  margin-top:-10px;
+    padding: 10px;
+    
+    text-shadow:darkgrey;
+}
+
+.nav button{
+ 
+
+ 
+  height:20px;
+ border:none;
+ border-radius:3px;
+ 
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ text-align:center;
+  transition: background-color 0.3s ease;
+}
+.nav button:hover {
+  background-color: #F52936; /* darker green on hover */
+}
+
+.buttons{
+  display: flex;
+  margin-left: 300px;
+
+}
+
+#setting{
+  margin-left: 10px;
+}

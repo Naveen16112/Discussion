@@ -1,0 +1,158 @@
+/* ✅ General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #AC99EA;
+  font-family: 'Segoe UI', sans-serif;
+  padding-bottom: 60px;
+}
+
+
+
+/* ✅ Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+#title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+#setting {
+  font-weight: bold;
+  color: #5C4D9D;
+}
+
+button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #5C4D9D;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #F52936;
+}
+
+/* ✅ Entry Section */
+.entrySection {
+  margin: 2rem auto;
+  max-width: 800px;
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+}
+
+#userPost {
+  flex: 1;
+  min-height: 60px;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  resize: vertical;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+#searchArea{
+     flex: 1;
+  min-height: 20px;
+  padding: 2px;
+  border-radius: 8px;
+  border: none;
+  resize: vertical;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.8);
+}
+
+#submitPost {
+  padding: 0.6rem 1rem;
+  height: auto;
+}
+
+/* ✅ Posts Section */
+#postthreads {
+
+    cursor: pointer;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+/* ✅ Each Post Box */
+.post-box {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#allPost{
+    display: none;
+}
+
+.question {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.post-actions {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.post-actions button {
+  font-size: 1rem;
+  background-color: #5C4D9D;
+  color: white;
+}
+
+.post-actions button:hover {
+  background-color: #F52936;
+}
+
+.createdBy {
+  font-size: 0.6rem;
+  color: #555;
+  margin-top: auto;
+  text-align: right;
+  font-style: italic;
+}
+
+/* ✅ Responsive */
+@media (max-width: 600px) {
+  .entrySection {
+    flex-direction: column;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

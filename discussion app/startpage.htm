@@ -1,0 +1,84 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>discussion app</title>
+        <link rel="stylesheet" href="startpage.css">
+</head>
+<body class="body">
+
+
+     <div class="mainCont"> -->
+
+        <!-- <p id="title"> discussion app</p>
+       <div class="container">
+        <input type="input" id="username" placeholder="enter your email/ username"><br>
+        <input type="input" id="password" placeholder="enter your password"><br>
+        <button type="button" id="signUp" onclick="signUp()">sign</button>
+        <button type="button" id="logIn" onclick="logIn()"> log in</button> -->
+
+        <!-- </div>
+    </div> -->
+
+        <!-- <script src="startpage.js"></script>
+
+
+</body>
+</html> --> 
+
+
+
+<!-- chat ka code -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Discussion App</title>
+  <link rel="stylesheet" href="startpage.css" />
+</head>
+<body>
+
+  <!-- ✅ HEADER -->
+  <header id="mainHeader">
+    <h1>Discussion App</h1>
+  </header>
+
+  <!-- ✅ LOGIN SIGNUP FORM -->
+  <main class="container">
+    <div class="form-box">
+      <input type="text" id="username" placeholder="Enter your email/username" />
+      <input type="password" id="password" placeholder="Enter your password" />
+      <div class="btns">
+        <button id="signUp" onclick="signUp()">Sign Up</button>
+        <button id="logIn" onclick="logIn()">Log In</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- ✅ FOOTER -->
+  <footer>
+    <p>&copy; G Billion tech</p>
+  </footer>
+
+  
+  <script>
+    // ✅ Header Hide on Scroll Down, Show on Scroll Up
+    let prevScroll = window.scrollY;
+    const header = document.getElementById("mainHeader");
+
+    window.addEventListener("scroll", () => {
+      let currentScroll = window.scrollY;
+      if (currentScroll > prevScroll) {
+        header.style.top = "-70px"; // hide
+      } else {
+        header.style.top = "0"; // show
+      }
+      prevScroll = currentScroll;
+    });
+  </script>
+<script src="startpage.js"></script>
+</body>
+</html>
